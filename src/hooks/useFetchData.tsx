@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { normalizeDataByDate } from "../utils/normalizeData";
-import { Transaction } from "../types/transaction"; // Import the interface
+import { Transaction } from "../types/transaction"; // Importing the interface
 
-// Define the props for the hook
+//We will handle all API logic here
 interface UseFetchDataProps {
   cashflow: "inflow" | "outflow" | "";
 }
@@ -50,11 +50,11 @@ const useFetchData = <T,>(
     }, [props.cashflow]);
 
     if (isLoading || !data) {
-      return <div>Loading...</div>;
+      return <div>Loading...</div>; // checking any loading
     }
 
     if (error) {
-      return <div>Something went wrong!...</div>;
+      return <div>Something went wrong!...</div>; //checking any errors
     }
 
     return <Element data={data} {...props} />;
