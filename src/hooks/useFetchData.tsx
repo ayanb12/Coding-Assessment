@@ -31,8 +31,22 @@ const useFetchData = <T,>(
       }
     };
 
+    //FOR HANDLING PAGINATION LOGIC
+    // const handleScroll = () => {
+    //   if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+    //     makeApiCall(currentPage + 1);
+    //   }
+    // };
+
     useEffect(() => {
       makeApiCall(props.cashflow);
+
+      //OnScroll we change the page
+
+      //   window.addEventListener('scroll', handleScroll);
+      //   return () => {
+      //     window.removeEventListener('scroll', handleScroll);
+      //   }
     }, [props.cashflow]);
 
     if (isLoading || !data) {
