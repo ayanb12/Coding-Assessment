@@ -1,0 +1,108 @@
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  transition: all 0.15s ease-in;
+  margin-bottom: 15px;
+}
+.card:hover {
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+.card-sub-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-title > p {
+  font-weight: bold;
+}
+.divider {
+  font-weight: bold;
+}
+
+/* CARD AMOUNT STYLING */
+
+.card-amount {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-amount .sign {
+  font-size: 30px;
+}
+.prefix-green {
+  color: green;
+}
+.prefix-red {
+  color: red;
+}
+
+.date-heading {
+  font-size: 18px;
+}
+
+/* Filter styles */
+
+.filter-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter-all {
+  width: 79px;
+  height: 48px;
+  background-color: #00d373;
+  display: flex;
+  border: none;
+  outline: none;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-all > img {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.cashflow {
+  width: 48px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cashflow:hover {
+  transform: scale(1.05);
+}
